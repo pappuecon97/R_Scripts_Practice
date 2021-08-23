@@ -2,7 +2,10 @@
 
 
 #For instances, let's build up a histogram of age of 
-#death with increasing complexity
+#death with increasing complexity.
+
+#load library
+library(tidyverse)
 
 all %>% 
   mutate(days_lived = as.integer(deathDate - birthDate)) %>% #make it integer
